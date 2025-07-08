@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="/bmi-calculator/assets/css/style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Calculadora de IMC</h1>
+        <form id="bmi-form">
+            <label for="weight">Peso (kg): </label>
+            <input type="number" placeholder="Ex: 65" id="weight" required>
+            <label for="height">Altura (m): </label>
+            <input type="number" placeholder="Ex: 1.74 ou 174" step="0.01" id="height" required>
+            <button type="submit" id="button">Calcular</button>
+
+            <div id="result-container">
+                <p id="result">Seu IMC é: 0.00</p>
+                <div class="bmi-group">
+                    <h3 id="groupTitle"><span id="spanTitle"></span></h2>
+                    <p id="groupDesc"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="/bmi-calculator/assets/js/main.js"></script>
+</body>
+
+</html>
